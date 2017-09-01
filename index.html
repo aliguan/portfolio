@@ -12,7 +12,23 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div onclick="openNav()" class="arrow">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+
+    <div id="main" class="container-fluid">
+
         <div class="row">
             <div   class="col-md-12">
                 <p class="draw meet" style="text-align: center" id="typing"></p>
