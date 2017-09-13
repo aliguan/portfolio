@@ -1,14 +1,24 @@
-$font: 'Source Sans Pro', sans-serif;
+$font: 'trailr', sans-serif;
 $background: #fefefe;
 $text: #4b507a;
+$pfont:'traill', sans-serif;
+$bold:'trailb', sans-serif;
+$blue: #00129a;
 
-$cyan: #60daaa;
-$yellow: #fbca67;
-$orange: #ff8a30;
-$red: #f45e61;
-$purple: #6477b9;
-$blue: #0eb7da;
+@font-face {
+  font-family: 'trailr';
+  src: url('../fonts/PaulGrotesk-Regular-Trail.otf'); /* IE9 Compat Modes */
+}
 
+@font-face {
+  font-family: 'traill';
+  src: url('../fonts/PaulGrotesk-Thin-Trail.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'trailb';
+  src: url('../fonts/PaulGrotesk-Bold-Trail.otf'); /* IE9 Compat Modes */
+}
 
 body {
     background-color: white;
@@ -19,9 +29,9 @@ body {
 
 p {
     color: black;
-    font-weight: 300;
-    font-size: 3em;
+    font-size: 2em;
     border: 0;
+    font-family: 'traill'
 };
 
 /* The side navigation menu */
@@ -32,7 +42,7 @@ p {
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: #111; /* Black*/
+    background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
