@@ -19,11 +19,11 @@
 <body>
 
 
-    <div id="mySidenav" class="sidenav">
+    <div id="sidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#">Work</a>
+      <a href="#" onclick="showWorks">Work</a>
 
     </div>
 
@@ -43,14 +43,16 @@
                     <span class="bottom"></span>
                 </div>
               </div>
-              <div class="col-md-4 greeting">
-                  <h1>Hello,</h1>
-                  <p>My name is Alice & I am a Full Stack Developer from South Florida.</p>
-                  <p>I am a sucker for beautiful aesthetics and elegant code.</p>
-                  <p>Feel free to take a look around.<p>
+              <div class="col-md-5 greeting">
+                  <div class="greetingbox">
+                       <h1>Full Stack Developer.</h1>
+                       <h1>Sucker for clean aesthetics and elegant code.</h1>
+                       <h1>Always Forward,<br> EE Cummings Enthusiast.<h1>
+                       <button class="btnline">Projects</button>
+                  </div>
               </div>
               <div class="scroll-downs">
-                <div class="mousey">
+                <div class="mouse">
                   <div class="scroller"></div>
                 </div>
               </div>
@@ -61,8 +63,14 @@
 
         </div>
         <div id="works" class="row">
+            <div id="gowander" class="col-md-4">
+                <div class="card">
+                    <img src="images/gowander.png">
+                </div>
             <div>
-                <img  id="gowander" src="images/gowander.png">
+
+            <div id="gowander" class="col-md-4">
+                <h1>HI</h1>
             <div>
         </div>
 

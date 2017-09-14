@@ -1,14 +1,4 @@
-
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "325px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
+$(document).ready( function() {
 
 var lFollowX = 0,
     lFollowY = 0,
@@ -42,13 +32,23 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-$(document).ready( function() {
+
     //SCROLL MAGIC SCENES
     var controller = new ScrollMagic.Controller();
 
     var scene1 = new ScrollMagic.Scene({
-        triggerElement: '#works'
+        triggerElement: 1000,
     }).setClassToggle('#gowander', 'fadeIn')
     .addTo(controller);
 
 });
+
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "325px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
