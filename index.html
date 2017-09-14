@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script>
 
-    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
+
+
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">Home</a>
@@ -21,23 +27,45 @@
 
     </div>
 
-    <div onclick="openNav()" class="arrow">
-        <div class="arrowchild">
-          <span class="top"></span>
-          <span class="middle"></span>
-          <span class="bottom"></span>
-      </div>
-    </div>
-
 
     <div id="main" class="container-fluid">
 
-        <div class="row">
-            <div class="col-md-4 center-block greeting">
-                <h1>Hello</h1>
-                <p> I am a Full Stack Developer from South Florida.</p>
+        <div class="heading row clearfix">
+
+            <div class="col-md-12 wrap">
+
+              <div class="bg">
+              </div>
+              <div onclick="openNav()" class="arrow">
+                  <div class="arrowchild">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+              </div>
+              <div class="col-md-4 greeting">
+                  <h1>Hello,</h1>
+                  <p>My name is Alice & I am a Full Stack Developer from South Florida.</p>
+                  <p>I am a sucker for beautiful aesthetics and elegant code.</p>
+                  <p>Feel free to take a look around.<p>
+              </div>
+              <div class="scroll-downs">
+                <div class="mousey">
+                  <div class="scroller"></div>
+                </div>
+              </div>
+
             </div>
+
+
+
         </div>
+        <div id="works" class="row">
+            <div>
+                <img  id="gowander" src="images/gowander.png">
+            <div>
+        </div>
+
     </div>
 
 
