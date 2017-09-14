@@ -31,6 +31,7 @@ body {
     background-color: white;
     margin: 0;
     font-family: $font;
+    overflow: hidden;
 }
 
 h1 {
@@ -235,9 +236,18 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
   100% { transform: translateY(15px); opacity: 0;}
 }
 
-#works {
-    margin-top: 50px;
+.showWorks {
+    width: 100%!important;
 }
+
+#works {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+
 
 .btnline {
     background: none;

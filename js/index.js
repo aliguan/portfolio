@@ -41,6 +41,11 @@ moveBackground();
     }).setClassToggle('#gowander', 'fadeIn')
     .addTo(controller);
 
+
+$('.projects').on('click', (e) => {
+    $('#works').slideToggle();
+});
+
 });
 
 
