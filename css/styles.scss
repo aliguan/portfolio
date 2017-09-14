@@ -31,9 +31,8 @@ body {
     background-color: white;
     margin: 0;
     font-family: $font;
-    // overflow: hidden;
-}
 
+}
 h1 {
     font-family: $hfont;
 
@@ -44,14 +43,13 @@ p {
     font-size: 1.5em;
     border: 0;
     font-family: 'traill'
-};
-
-
+}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     margin: 20px;
+    overflow: hidden;
 }
 
 
@@ -237,8 +235,7 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
 
 
 #works {
-    top: 0;
-    bottom: 0;
+    bottom: -200vh;
     position: absolute;
     background-color: white;
     text-align: center;
@@ -248,6 +245,10 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
         margin-top: 3em;
         font-family: 'trailr';
     }
+}
+
+.closeworks {
+
 }
 
 #works .row {

@@ -35,7 +35,17 @@ $('.projects').on('click', (e) => {
     $('#works').stop().animate({
            top: 0,
            bottom: 0,
+           position: 'absolute',
        }, 1600, 'easeOutQuint'
+   );
+});
+
+$('#hideWorks').on('click', (e) => {
+    $('#works').removeAttr('style');
+    $('#works').stop().animate({
+        bottom: -200+'vh',
+        position: 'static',
+    }, 2000, 'easeOutQuint'
    );
 });
 
