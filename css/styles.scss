@@ -102,7 +102,7 @@ p {
   right: 25;
   margin: 20px;
 
-  background: white; /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
   border: 4px solid #333;
   span {
     position:absolute;
@@ -139,7 +139,7 @@ p {
 
 .arrow:hover {
     background: white;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, white, white);  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to left, white, white);
 background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
      transition: all 0.5s ease-in-out;
@@ -236,24 +236,26 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
 }
 
 
-
 #works {
     top: 0;
     bottom: 0;
     position: absolute;
     background-color: white;
     text-align: center;
-    width: 100%;
     h2 {
         font-size: 5em;
         color: white;
         margin-top: 3em;
-        font-family: 'traill';
+        font-family: 'trailr';
     }
 }
 
-.banner {
+#works .row {
+    margin: 0;
+}
 
+.banner {
+    overflow: hidden;
 }
 .worksbanner {
     height: 500px;
@@ -277,9 +279,9 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
 }
 
 .divide {
-    width: 8%;
-    margin: auto;
-    border-top: 2px solid white;
+    width: 20%;
+    margin: 25px auto;
+    border-top: 4px solid white;
 }
 
 .card {
@@ -287,7 +289,6 @@ background: linear-gradient(to left, white, white); /* W3C, IE 10+/ Edge, Firefo
 }
 
 #gowander {
-
     img {
      width: 100%;
     }
@@ -349,20 +350,19 @@ p:hover {
 }
 
 .filbtn {
-    font-family: Lato;
-    font-size: 1rem;
-    font-weight: normal;
+    font-family: 'traill';
+    font-size: 2rem;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
     line-height: normal;
     padding: .5rem 1rem;
-    margin: 0;
+    margin: 0 3px 30px 3px;
     height: auto;
-    border: 1px solid;
+    border: 2px solid black;
     vertical-align: middle;
     -webkit-appearance: none;
-    color: #555;
+    color: black;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -381,7 +381,15 @@ p:hover {
   padding: 0;
 }
 
+#filterprojects {
+    margin-top: 50px!important;
+}
 
+.worksheader {
+    top: 10;
+    left: calc(50% - 225px/2);
+    position: fixed;
+}
 
 // MEDIA QUERIES
 

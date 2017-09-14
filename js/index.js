@@ -43,14 +43,13 @@ $('.projects').on('click', (e) => {
 
 $(function() {
 	var selectedClass = "";
-
-	$(".fil-cat").click( () => {
+		$(".fil-cat").click(function(){
 		selectedClass = $(this).attr("data-rel");
-        $("#portfolio").fadeTo(100, 0.1);
+     $("#portfolio").fadeTo(100, 0.1);
 		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-        setTimeout( () => {
-            $("."+selectedClass).fadeIn().addClass('scale-anm');
-            $("#portfolio").fadeTo(300, 1);
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
     }, 300);
 
 	});
