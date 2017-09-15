@@ -32,16 +32,19 @@ moveBackground();
 
 // Show Projects Div
 $('.projects').on('click', (e) => {
+    $('#works').addClass('show');
+    setTimeout( function() {
     $('#works').stop().animate({
            top: 0,
            bottom: 0,
            position: 'absolute',
        }, 1600, 'easeOutQuint'
-   );
+   )}, 600);
 });
 
 $('#hideWorks').on('click', (e) => {
     $('#works').removeAttr('style');
+    $('#works').removeClass('show');
     $('#works').stop().animate({
         bottom: -200+'vh',
         position: 'static',
