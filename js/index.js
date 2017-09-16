@@ -39,7 +39,7 @@ $('.projects').on('click', (e) => {
            bottom: 0,
            position: 'absolute',
        }, 1600, 'easeOutQuint'
-   )}, 600);
+   )}, 350);
 });
 
 $('#hideWorks').on('click', (e) => {
