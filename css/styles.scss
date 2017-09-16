@@ -228,6 +228,14 @@ p {
   100% { transform: translateY(15px); opacity: 0;}
 }
 
+#works.row {
+    margin: 0;
+}
+
+
+#works > .row {
+    margin: 0;
+}
 
 #works {
     bottom: -200vh;
@@ -247,9 +255,7 @@ p {
 
 }
 
-#works .row {
-    margin: 0!important;
-}
+
 
 .banner {
     overflow: hidden;
@@ -274,6 +280,8 @@ p {
         outline: 0;
     }
 }
+
+
 
 .divide {
     width: 20%;
