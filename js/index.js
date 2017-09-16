@@ -31,20 +31,27 @@ $(window).on('mousemove click', function(e) {
 moveBackground();
 
 // Show Projects Div
-$('.projects').on('click', (e) => {
+$('.projects, #navworks').on('click', (e) => {
+
     $('#works').addClass('show');
     setTimeout( function() {
+    closeNav();
     $('#works').stop().animate({
            top: 0,
            bottom: 0,
            position: 'absolute',
        }, 1600, 'easeOutQuint'
-   )}, 350);
+   );
+    }, 500);
+    setTimeout( () => {
+        $('.worksheader').fadeIn('slow');
+    }, 700);
 });
 
-$('#hideWorks').on('click', (e) => {
+$('#hideworks').on('click', (e) => {
     $('#works').removeAttr('style');
     $('#works').removeClass('show');
+    $('.worksheader').fadeOut('slow');
     $('#works').stop().animate({
         bottom: -200+'vh',
         position: 'static',
