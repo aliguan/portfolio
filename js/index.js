@@ -1,5 +1,14 @@
 $(document).ready( function() {
 
+// Preloading images
+var images = ['images/bg.jpg', 'images/gowander.png', 'images/harry.png', 'images/spotifriend.jpg', 'images/worksbanner.jpg'];
+
+for (i = 0; i < images.length; i++) {
+    var img = new Image();
+    img.src = images[i];
+}
+
+
 var lFollowX = 0,
     lFollowY = 0,
     x = 0,
