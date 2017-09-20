@@ -33,7 +33,7 @@ body {
     font-family: $font;
 }
 h1 {
-    font-family: $hfont;
+    font-family: $pfont;
 
 }
 
@@ -172,6 +172,12 @@ p {
     margin: auto;
 }
 
+// About
+
+.about {
+    text-align: center;
+}
+
 //Right Background Panel
 .wrap {
   height: 94vh;
@@ -268,12 +274,6 @@ p {
     }
 }
 
-.closeworks {
-
-}
-
-
-
 .banner {
     overflow: hidden;
 }
@@ -287,8 +287,8 @@ p {
 .btnline {
     background: none;
     border-radius: 0;
-    border: 5px solid #333;
-    font-family: 'trailb';
+    border: 2px solid #333;
+    font-family: 'trailr';
     padding: 9px 21px 8px 22px;
     margin-top: 16px;
     text-transform: uppercase;
@@ -302,8 +302,6 @@ p {
         background: #333;
     }
 }
-
-
 
 .divide {
     width: 20%;
@@ -408,6 +406,8 @@ p:hover {
 
 #filterprojects {
     margin-top: 50px!important;
+    background: white;
+    overflow-y: hidden;
 }
 
 .worksheader {
