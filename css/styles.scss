@@ -34,7 +34,8 @@ body {
 }
 h1 {
     font-family: $pfont;
-
+    color: white;
+    font-size: 6em;
 }
 
 p {
@@ -161,15 +162,23 @@ p {
 }
 
 .greeting {
-    margin-top: 3.5em;
+    margin-top: calc(50vh - 410px/2);
     padding: 10px 0px 15px 50px;
     border-radius: 2px;
+    h2 {
+        margin-top: 0;
+        font-size: 2.3em;
+    }
 }
 
 .greetingbox {
     padding: 22px 0px 25px 22px;
     // border: 9px solid #333;
     margin: auto;
+    text-align: center;
+    color: #ee875a;
+    font-family: $pfont;
+    font-size: 1.4em;
 }
 
 // About
@@ -279,15 +288,23 @@ p {
 }
 .worksbanner {
     height: 500px;
-    background: url('../images/worksbanner.jpg') no-repeat center;
+    // background: url('../images/worksbanner.jpg') no-repeat center;
     background-size: cover;
+    // background-color: #1e2a38;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 
 
 .btnline {
+    color: white;
     background: none;
     border-radius: 0;
-    border: 2px solid #333;
+    border: 2px solid white;
     font-family: 'trailr';
     padding: 9px 21px 8px 22px;
     margin-top: 16px;
@@ -297,9 +314,10 @@ p {
         outline: 0;
     }
     &:hover {
-        transition: 0.4s ease-in-out;
-        color:white;
-        background: #333;
+        transition: 0.25s ease-in-out;
+        color: #222;
+        background: white;;
+
     }
 }
 
