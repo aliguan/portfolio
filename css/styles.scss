@@ -94,25 +94,25 @@ p {
 
 .arrow {
   position: fixed;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   right: 25;
   margin: 20px;
-  background: white;
-  border: 4px solid #333;
+  background: #112130;
+  // border: 4px solid white;
   span {
     position:absolute;
     left:0;
-    background: #333;
-    height: 4px;
+    background: white;
+    height: 2px;
     width: inherit;
     margin: auto;
     left: 4px;
     &.top {
-      top: 11px;
+      top: 13px;
     }
     &.middle {
-      top: 18px;
+      top: 19px;
       }
     &.bottom {
       top: 25px;
@@ -143,7 +143,7 @@ p {
       -moz-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
-     background: #333;
+
 
       &.top {
           top: 18px;
@@ -167,7 +167,7 @@ p {
     border-radius: 2px;
     h2 {
         margin-top: 0;
-        font-size: 2.3em;
+        font-size: 1.8em;
     }
 }
 
@@ -179,6 +179,7 @@ p {
     color: #ee875a;
     font-family: $pfont;
     font-size: 1.4em;
+    display: none;
 }
 
 // About
