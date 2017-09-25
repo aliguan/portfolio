@@ -447,14 +447,24 @@ p:hover {
     opacity: 0.5;
     transition: 0.5s ease-in-out;
     height: 200px;
+    position: relative;
     h1 {
         font-family: 'trailr';
-        font-size: 3em;
+        font-size: 2em;
+        text-align: left;
+        position: absolute;
+        bottom: 15;
+        left: 30;
     }
     &:hover {
-         opacity: 0.8;
+         opacity: 0.9;
+         cursor: pointer;
     }
 }
+
+// .worksrow {
+//     margin-bottom: 22px;
+// }
 
 .show {
     display: block;
