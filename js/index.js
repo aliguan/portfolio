@@ -85,16 +85,31 @@ $(function() {
 	});
 });
 
-var open = true;
+
+var open = false;
 //Open Individual works
+
+
+
 $('.spotifriend').on('click', (e) => {
+    if(open === false) {
+        $('html,body').animate({
+       scrollTop: $(".poop").offset().top},
+       'slow');
         $('.spotifriend').stop().animate({
             height: '500px',
             opacity: 1,
-        }, 200, 'easeOutQuint'
-    );
-});
-
+        }, 200, 'easeOutQuint');
+        open = true;
+    } else {
+            $('.spotifriend').stop().animate({
+                height: '200px',
+                opacity: 1,
+            }, 200, 'easeOutQuint'
+        );
+        open = false;
+    }
+    });
 
 });
 
