@@ -85,6 +85,16 @@ $(function() {
 	});
 });
 
+var open = true;
+//Open Individual works
+$('.spotifriend').on('click', (e) => {
+        $('.spotifriend').stop().animate({
+            height: '500px',
+            opacity: 1,
+        }, 200, 'easeOutQuint'
+    );
+});
+
 
 });
 
