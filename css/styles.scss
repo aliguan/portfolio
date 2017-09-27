@@ -11,7 +11,7 @@ $background: #fefefe;
 $text: #4b507a;
 $pfont:'traill', sans-serif;
 $hfont:'trailb', sans-serif;
-$blue: #00129a;
+$highlight: #ee875a;
 
 @font-face {
   font-family: 'trailr';
@@ -258,7 +258,7 @@ p {
     position: absolute;
     background-color: white;
     text-align: center;
-    display: none;
+    // display: none;
     width: 100%;
     h2 {
         font-size: 5em;
@@ -443,9 +443,9 @@ p:hover {
     background: url('../images/spotifriend.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.5s ease-in-out;
-    height: 200px;
+    height: 500px;
     position: relative;
     h1 {
         font-family: 'trailr';
@@ -459,11 +459,46 @@ p:hover {
          opacity: 0.9;
          cursor: pointer;
     }
+    img {
+        width: 120px;
+    }
+
+}
+.desc {
+    text-align: left;
+    margin: 45px 50px 0 82px;
+    padding: 60px;
+    h3 {
+        font-family: 'traill';
+        color: white;
+        text-align: left;
+    }
+
+    p {
+        color: white;
+        font-family: 'trailr';
+        text-transform: none;
+        font-size: 1em;
+        border-bottom: none;
+        padding: 0;
+        &:hover {
+            background: none;
+        }
+    }
+    a {
+        color: white;
+    }
+
 }
 
 // .worksrow {
 //     margin-bottom: 22px;
 // }
+
+.hr {
+    width: 10%;
+    height: 2px;
+}
 
 .show {
     display: block;

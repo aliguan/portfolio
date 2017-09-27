@@ -104,7 +104,7 @@ $('.spotifriend').on('click', (e) => {
     } else {
             $('.spotifriend').stop().animate({
                 height: '200px',
-                opacity: 1,
+                opacity: 0.6,
             }, 200, 'easeOutQuint'
         );
         open = false;
