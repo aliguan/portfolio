@@ -445,18 +445,18 @@ p:hover {
     background-position: center;
     opacity: 0.6;
     transition: 0.5s ease-in-out;
-    height: 500px;
+    height: 200px;
     position: relative;
     h1 {
         font-family: 'trailr';
-        font-size: 2em;
+        font-size: 5em;
         text-align: left;
         position: absolute;
         bottom: 15;
         left: 30;
     }
     &:hover {
-         opacity: 0.9;
+         opacity: 1 !important;
          cursor: pointer;
     }
     img {
@@ -464,11 +464,38 @@ p:hover {
     }
 
 }
+
+// .gowander {
+//     background: url('../images/gowander.png');
+//     background-size: cover;
+//     background-position: bottom;
+//     opacity: 0.6;
+//     transition: 0.5s ease-in-out;
+//     height: 200px;
+//     position: relative;
+//     h1 {
+//         font-family: 'trailr';
+//         font-size: 5em;
+//         text-align: left;
+//         position: absolute;
+//         bottom: 15;
+//         left: 30;
+//     }
+//     &:hover {
+//          opacity: 1 !important;
+//          cursor: pointer;
+//     }
+//     img {
+//         width: 120px;
+//     }
+//
+// }
 .desc {
     text-align: left;
     margin: 45px 50px 0 82px;
-    padding: 60px;
+    padding: 45px;
     background-color: rgba(192,192,192,0.4);
+    display: none;
     h3 {
         font-family: 'traill';
         color: white;
@@ -490,6 +517,12 @@ p:hover {
         color: white;
     }
 
+}
+
+.desc {
+    img {
+        margin: 45px 0px 0px 20px;
+    }
 }
 
 // .worksrow {

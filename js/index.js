@@ -93,20 +93,29 @@ var open = false;
 
 $('.spotifriend').on('click', (e) => {
     if(open === false) {
+        $('.desc').fadeToggle(600);
         $('html,body').animate({
-       scrollTop: $(".poop").offset().top},
+       scrollTop: $('.poop').offset().top},
        'slow');
+
         $('.spotifriend').stop().animate({
             height: '500px',
             opacity: 1,
         }, 200, 'easeOutQuint');
+
+        $('.spotifriend h1').stop().animate({
+           fontSize: '2em',
+       }, 600, 'easeInQuint');
         open = true;
     } else {
-            $('.spotifriend').stop().animate({
-                height: '200px',
-                opacity: 0.6,
-            }, 200, 'easeOutQuint'
-        );
+        $('.desc').fadeToggle(600);
+        $('.spotifriend').stop().animate({
+            height: '200px',
+            opacity: 0.6,
+        }, 200, 'easeOutQuint');
+        $('.spotifriend h1').stop().animate({
+           fontSize: '5em',
+       }, 600, 'easeInQuint');
         open = false;
     }
     });
