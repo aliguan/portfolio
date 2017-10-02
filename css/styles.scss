@@ -258,7 +258,7 @@ p {
     position: absolute;
     background-color: white;
     text-align: center;
-    // display: none;
+    display: none;
     width: 100%;
     h2 {
         font-size: 5em;
@@ -471,14 +471,16 @@ p:hover {
 .gowander {
     background: url('../images/gowander.png');
     background-size: cover;
-    background-position: middle;
+    background-position: bottom;
 }
 .desc {
     text-align: left;
-    margin: 45px 50px 0 82px;
+    vertical-align: middle;
     padding: 45px;
     background-color: rgba(192,192,192,0.4);
     display: none;
+    width: 90%;
+    margin: auto;
     h3 {
         font-family: 'traill';
         color: white;
@@ -502,9 +504,10 @@ p:hover {
 
 }
 
+
+
 .desc {
     img {
-        margin: 45px 0px 0px 20px;
     }
 }
 
@@ -519,6 +522,11 @@ p:hover {
 
 .show {
     display: block;
+}
+
+.valign {
+    display: flex;
+    align-items: center;
 }
 // MEDIA QUERIES
 

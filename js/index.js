@@ -86,42 +86,75 @@ $(function() {
 });
 
 
-var open = false;
+
 //Open Individual works
 
+function openWork(work, about) {
+    var open = false;
+    $(work).on('click', (e) => {
+        if(open === false) {
+            $(about).fadeToggle(600);
+            $('html,body').animate({
+           scrollTop: $('.poop').offset().top},
+           'slow');
 
+            $(work).stop().animate({
+                height: '500px',
+                opacity: 1,
+            }, 200, 'easeOutQuint');
 
-$('.spotifriend').on('click', (e) => {
-    if(open === false) {
-        $('.aboutspot').fadeToggle(600);
-        $('html,body').animate({
-       scrollTop: $('.poop').offset().top},
-       'slow');
+            $(work + 'h1').stop().animate({
+               fontSize: '2em',
+           }, 600, 'easeInQuint');
+            open = true;
+        } else {
+            $(about).fadeToggle(600);
+            $(work).stop().animate({
+                height: '150px',
+                opacity: 0.6,
+            }, 200, 'easeOutQuint');
+            $(work + 'h1').stop().animate({
+               fontSize: '5em',
+           }, 600, 'easeInQuint');
+            open = false;
+        }
+        });
+}
 
-        $('.spotifriend').stop().animate({
-            height: '500px',
-            opacity: 1,
-        }, 200, 'easeOutQuint');
+openWork('.spotifriend', '.aboutspot');
+openWork('.gowander', '.aboutwander');
 
-        $('.spotifriend h1').stop().animate({
-           fontSize: '2em',
-       }, 600, 'easeInQuint');
-        open = true;
-    } else {
-        $('.desc').fadeToggle(600);
-        $('.spotifriend').stop().animate({
-            height: '200px',
-            opacity: 0.6,
-        }, 200, 'easeOutQuint');
-        $('.spotifriend h1').stop().animate({
-           fontSize: '5em',
-       }, 600, 'easeInQuint');
-        open = false;
-    }
+// $('.spotifriend').on('click', (e) => {
+//     if(open === false) {
+//         $('.aboutspot').fadeToggle(600);
+//         $('html,body').animate({
+//        scrollTop: $('.poop').offset().top},
+//        'slow');
+//
+//         $('.spotifriend').stop().animate({
+//             height: '500px',
+//             opacity: 1,
+//         }, 200, 'easeOutQuint');
+//
+//         $('.spotifriend h1').stop().animate({
+//            fontSize: '2em',
+//        }, 600, 'easeInQuint');
+//         open = true;
+//     } else {
+//         $('.desc').fadeToggle(600);
+//         $('.spotifriend').stop().animate({
+//             height: '200px',
+//             opacity: 0.6,
+//         }, 200, 'easeOutQuint');
+//         $('.spotifriend h1').stop().animate({
+//            fontSize: '5em',
+//        }, 600, 'easeInQuint');
+//         open = false;
+//     }
+//     });
+//
+// });
     });
-
-});
-
 
 function openNav() {
     document.getElementById("sidenav").style.width = "325px";
