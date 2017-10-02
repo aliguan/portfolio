@@ -123,6 +123,7 @@ function openWork(work, about) {
 
 openWork('.spotifriend', '.aboutspot');
 openWork('.gowander', '.aboutwander');
+openWork('.triwizard', '.abouttri');
 
 // $('.spotifriend').on('click', (e) => {
 //     if(open === false) {
