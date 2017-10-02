@@ -93,7 +93,7 @@ var open = false;
 
 $('.spotifriend').on('click', (e) => {
     if(open === false) {
-        $('.desc').fadeToggle(600);
+        $('.aboutspot').fadeToggle(600);
         $('html,body').animate({
        scrollTop: $('.poop').offset().top},
        'slow');
