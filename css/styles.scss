@@ -514,9 +514,17 @@ p:hover {
 
 
 .desc {
-    img {
-    }
+    position: relative;
+
 }
+
+.image {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
 
 // .worksrow {
 //     margin-bottom: 22px;
