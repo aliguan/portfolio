@@ -32,7 +32,10 @@ body {
     background-color: white;
     margin: 0;
     font-family: $font;
+    overflow-x: hidden;
+    color: black;
 }
+
 h1 {
     font-family: $pfont;
     color: white;
@@ -48,8 +51,9 @@ p {
 
 #main {
     transition: margin-left .5s;
-    margin: 20px;
-
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 
@@ -172,7 +176,6 @@ p {
 }
 
 .greetingbox {
-    padding: 22px 0px 25px 22px;
     // border: 9px solid #333;
     margin: auto;
     text-align: center;
@@ -184,8 +187,27 @@ p {
 
 // About
 
+.content {
+    width: 85%;
+    margin: auto;
+}
+
 .about {
-    text-align: center;
+    font-family: $hfont;
+    margin-top: 60px;
+    h3 {
+        font-size: 2em;
+        text-align: right;
+    }
+}
+
+.aboutright {
+    font-family: $pfont;
+    text-align: left;
+    h2 {
+        font-size: 1.6em;
+    }
+
 }
 
 //Right Background Panel
@@ -210,10 +232,10 @@ p {
 
 .scroll-downs {
   position: absolute;
-  top: 85vh;
+  top: 90vh;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 38px;
   margin: auto;
 
   width :34px;
@@ -244,6 +266,18 @@ p {
   100% { transform: translateY(15px); opacity: 0;}
 }
 
+.icons {
+    ul {
+        text-align: center;
+        li {
+            display: inline;
+            list-style-type: none;
+            font-size: 2em;
+            padding: 12px;
+        }
+    }
+}
+
 #works.row {
     margin: 0;
 }
@@ -254,11 +288,10 @@ p {
 }
 
 #works {
-    bottom: -200vh;
-    position: absolute;
+    // bottom: -200vh;
+    // position: absolute;
     background-color: white;
     text-align: center;
-    display: none;
     width: 100%;
     h2 {
         font-size: 5em;
@@ -287,20 +320,6 @@ p {
 .banner {
     overflow: hidden;
 }
-.worksbanner {
-    height: 500px;
-    // background: url('../images/worksbanner.jpg') no-repeat center;
-    background-size: cover;
-    // background-color: #1e2a38;
-    background: #304352;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-}
-
-
 .btnline {
     color: white;
     background: none;
@@ -431,6 +450,7 @@ p:hover {
     overflow-y: hidden;
 }
 
+
 .worksheader {
     top: 10;
     left: calc(50% - 225px/2);
@@ -440,7 +460,7 @@ p:hover {
 
 //SPOTIFRIEND
 .work {
-    opacity: 0.6;
+    opacity: 0.7;
     transition: 0.5s ease-in-out;
     height: 160px;
     position: relative;
@@ -530,9 +550,12 @@ p:hover {
 //     margin-bottom: 22px;
 // }
 
+footer {
+    background-color: #242e3a;
+}
 .hr {
     width: 10%;
-    height: 2px;
+    height: 1px;
 }
 
 .show {

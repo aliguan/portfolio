@@ -2,7 +2,14 @@ $(document).ready( function() {
 
 $('.greetingbox').fadeIn(1850);
 // Preloading images
-var images = ['images/bg.jpg', 'images/gowander.png', 'images/harry.png', 'images/spotifriend.jpg', 'images/worksbanner.jpg'];
+var images = ['images/bg.jpg',
+        'images/gowander.png',
+        'images/harry.png',
+        'images/spotifriend.jpg',
+        'images/worksbanner.jpg',
+        'images/worksbanner.jpg',
+        'images/worksbanner.jpg',
+        'images/worksbanner.jpg'];
 
 for (i = 0; i < images.length; i++) {
     var img = new Image();

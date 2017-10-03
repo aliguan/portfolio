@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -16,8 +17,6 @@
   crossorigin="anonymous"></script>
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -56,135 +55,148 @@
                        <button class="projects btnline">My Work</button>
                        <button class="projects btnline">Get In Touch</button>
                   </div>
+                  <div class="scroll-downs">
+                     <div class="mouse">
+                       <div class="scroller"></div>
+                     </div>
+                  </div>
               </div>
 
 
           </div>
 
         </div>
+        <div class="">
+            <div class="content about row">
+                <div class="col-md-6">
+                    <h3> <strong>Hello! I am Alice Guan. I am a Web Developer that is obsessed with clean aesthetics and creating beautiful & functional code.
+                    </strong></h3>
+                    <hr style="float: right;" class="hr">
+                </div>
+                <div class="aboutright col-md-6">
+                    <h2><strong>I like to create applications to solve problems. I am most familiar with the MEAN Stack, but I constantly dabble in
+                    different frameworks and languages in the pursuit of self-growth and the best solutions. JavaScript is my weapon of choice.</strong></h2>
+
+                </div>
+                    <!-- <br>
+                    <h3>Feel free to look around.</h3> -->
+            </div>
+
+            <div id="works" class="row">
+                <h2 style="color: black; text-transform: uppercase"> My Work</h2>
+                <div id="filterworks" class="row">
+                    <div class="col-md-12 col-sm-12 center-block">
 
 
+                        <div style="clear:both;"></div>
+                        <div id="portfolio">
+                              <div class="tile row worksrow scale-anm node all">
+                                <div class="work spotifriend node all col-md-12 valign">
+                                    <h1>SpotiFriend</h1>
+                                    <div class="tech col-md-5">
+
+                                    </div>
+                                    <div class="node col-md-7">
+
+
+                                        <div class="row node all desc aboutspot">
+                                            <div class="col-md-8">
+                                                <h3><strong>SpotiFriend is a MEAN stack app created for my final project as part of the Ironhack Coding Bootcamp. </strong> </h3>
+                                                <hr class="hr">
+                                                <p>This application allows users to search within a 25 mile radius for people who have similar music tastes. SpotiFriend uses a user's saved songs on Spotify to match users based on compatibility.</p>
+                                                <a href="http://spotifriend.herokuapp.com/login" target="_blank"><button class="btnline">View Demo</button></a>
+                                            </div>
+                                            <div class="col-md-4 image">
+                                                <img class="width: 100px;" src="images/spot.gif">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                              </div>
+
+                                  <div class="poop" style="clear:both;"></div>
+
+                              <div class="tile row worksrow scale-anm node all">
+                                <div class="work gowander node all col-md-12 valign">
+                                    <h1>Go Wander</h1>
+                                    <div class="tech col-md-5">
+
+                                    </div>
+                                    <div class="col-md-7">
+
+
+                                         <div class="row desc aboutwander">
+                                            <div class="col-md-8">
+                                                <h3><strong>Go Wander is an app created with MongoDB, Express, and NodeJS. </strong> </h3>
+                                                <hr class="hr">
+                                                <p>This application allows users to document their travel by plotting their locations with the Google Maps API and sharing it with others. </p>
+                                                <a href="http://gowander.herokuapp.com/login" target="_blank"><button class="btnline">View Demo</button></a>
+                                            </div>
+                                            <div class="col-md-4 image">
+                                                <img class="width: 100px;" src="images/logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                              </div>
+
+                              <div class="tile row worksrow scale-anm node all">
+                                <div class="work triwizard  node all col-md-12 valign">
+                                    <h1>Triwizard Maze</h1>
+                                    <div class="tech col-md-5">
+
+                                    </div>
+                                    <div class="col-md-7">
+
+                                         <div class="row desc abouttri">
+                                            <div class="col-md-12">
+                                                <h3><strong>Triwizard Maze is a game based off of Harry Potter using HTML5, CSS, and Vanilla JavaScript. </strong> </h3>
+                                                <hr class="hr">
+                                                <p>A simple maze game with the goal of getting the Triwizard Cup in the middle of a maze. Uses HTML5 Canvas. </p>
+                                                <a href="https://aliguan.github.io/triwizardmaze/" target="_blank"><button class="btnline">View Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                              </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- <div class="row projects1">
+                    <div id="gowander" class="col-md-4">
+                        <div class="card">
+                            <img src="images/gowander.png">
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <footer>
+            <h1 >Let's Chat</h1>
+            <div class="icons row">
+                    <div class="center-block col-md-5">
+                        <ul>
+                            <li> <i class="fa fa-linkedin-square"></i></li>
+                            <li><i class="fa fa-github-alt"></i></li>
+                            <li><i class="fa fa-envelope"></i> </li>
+                        </ul>
+                    </div>
+                    <!-- <br>
+                    <h3>Feel free to look around.</h3> -->
+            </div>
+        </footer>
 
     </div>
-    <div id="works" style="margin: 0" class="row">
-         <a href="javascript:void(0)" class="closebtn" id="hideworks">&times;</a>
-        <div class="banner">
-            <div class="row worksbanner clearfix bg">
 
-            </div>
-            <div class="worksheader">
-                <h2>My Work</h2>
-                <hr class="divide"></hr>
-
-                <div class="scroll-downs">
-                  <div class="mouse">
-                    <div class="scroller"></div>
-                  </div>
-              </div>
-            </div>
-
-        </div>
-        <!-- Project categories -->
-        <div id="filterworks" class="row">
-            <div class="col-md-11 col-sm-11 center-block">
-                <div class="toolbar mb2 mt2">
-                  <button class="filbtn fil-cat" href="" data-rel="all">ALL</button>
-                  <button class="filbtn fil-cat" data-rel="node">NODE.JS</button>
-                  <button class="filbtn fil-cat" data-rel="angular">ANGULARJS</button>
-                  <button class="filbtn fil-cat" data-rel="wordpress">WORDPRESS</button>
-                </div>
-
-                <div style="clear:both;"></div>
-                <div id="portfolio">
-                      <div class="tile row worksrow scale-anm node all">
-                        <div class="work spotifriend node all col-md-12 valign">
-                            <h1>SpotiFriend</h1>
-                            <div class="tech col-md-5">
-
-                            </div>
-                            <div class="node col-md-7">
-
-
-                                <div class="row node all desc aboutspot">
-                                    <div class="col-md-8">
-                                        <h3><strong>SpotiFriend is a MEAN stack app created for my final project as part of the Ironhack Coding Bootcamp. </strong> </h3>
-                                        <hr class="hr">
-                                        <p>This application allows users to search within a 25 mile radius for people who have similar music tastes. SpotiFriend uses a user's saved songs on Spotify to match users based on compatibility.</p>
-                                        <a href="http://spotifriend.herokuapp.com/login" target="_blank"><button class="btnline">View Demo</button></a>
-                                    </div>
-                                    <div class="col-md-4 image">
-                                        <img class="width: 100px;" src="images/spot.gif">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                      </div>
-
-                          <div class="poop" style="clear:both;"></div>
-
-                      <div class="tile row worksrow scale-anm node all">
-                        <div class="work gowander node all col-md-12 valign">
-                            <h1>Go Wander</h1>
-                            <div class="tech col-md-5">
-
-                            </div>
-                            <div class="col-md-7">
-
-
-                                 <div class="row desc aboutwander">
-                                    <div class="col-md-8">
-                                        <h3><strong>Go Wander is an app created with MongoDB, Express, and NodeJS. </strong> </h3>
-                                        <hr class="hr">
-                                        <p>This application allows users to document their travel by plotting their locations with the Google Maps API and sharing it with others. </p>
-                                        <a href="http://gowander.herokuapp.com/login" target="_blank"><button class="btnline">View Demo</button></a>
-                                    </div>
-                                    <div class="col-md-4 image">
-                                        <img class="width: 100px;" src="images/logo.png">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="tile row worksrow scale-anm node all">
-                        <div class="work triwizard  node all col-md-12 valign">
-                            <h1>Triwizard Maze</h1>
-                            <div class="tech col-md-5">
-
-                            </div>
-                            <div class="col-md-7">
-
-                                 <div class="row desc abouttri">
-                                    <div class="col-md-12">
-                                        <h3><strong>Triwizard Maze is a game based off of Harry Potter using HTML5, CSS, and Vanilla JavaScript. </strong> </h3>
-                                        <hr class="hr">
-                                        <p>A simple maze game with the goal of getting the Triwizard Cup in the middle of a maze. Uses HTML5 Canvas. </p>
-                                        <a href="https://aliguan.github.io/triwizardmaze/" target="_blank"><button class="btnline">View Demo</button></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                      </div>
-                </div>
-
-
-            </div>
-        </div>
-        <!-- <div class="row projects1">
-            <div id="gowander" class="col-md-4">
-                <div class="card">
-                    <img src="images/gowander.png">
-                </div>
-            </div>
-        </div> -->
-
-    </div>
 
 </body>
 </html>
