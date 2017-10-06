@@ -104,6 +104,12 @@ $('#navworks').on('click', (e) => {
     'slow');
 });
 
+$('#worksbtn').on('click', (e) => {
+    $('html,body').animate({
+    scrollTop: $('.aboutright').offset().top},
+    'slow');
+});
+
 
 //Open Individual works
 
