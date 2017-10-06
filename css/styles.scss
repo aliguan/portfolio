@@ -13,6 +13,7 @@ $pfont:'traill', sans-serif;
 $hfont:'trailb', sans-serif;
 $highlight: #ee875a;
 
+
 @font-face {
   font-family: 'trailr';
   src: url('../fonts/PaulGrotesk-Regular-Trail.otf'); /* IE9 Compat Modes */
@@ -90,7 +91,7 @@ p {
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: $highlight;
 }
 
 
@@ -187,7 +188,7 @@ p {
     // border: 9px solid #333;
     margin: auto;
     text-align: center;
-    color: #ee875a;
+    color: $highlight;
     font-family: $pfont;
     font-size: 1.4em;
     display: none;
@@ -635,8 +636,35 @@ p:hover {
 // }
 
 footer {
-    background-color: #242e3a;
+    color: white;
+    li {
+        &:first-child {
+            background-color: #f7804c;
+        }
+        &:last-child {
+            background-color: #4c6ef7;
+        }
+    }
 }
+
+ul {
+    text-align: center;
+   li {
+       padding: 5em!important;
+       list-style-type: none;
+       display: inline-block;
+       padding: 0 30px;
+   }
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    li {
+        padding: 0 0 2em 0 !important;
+    }
+}
+
 .hr {
     width: 10%;
     height: 1px;
