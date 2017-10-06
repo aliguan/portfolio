@@ -142,6 +142,12 @@ var iconScene = new ScrollMagic.Scene ({
 .setClassToggle('.svg', 'fade-in')
 .addTo(controller);
 
+var greetingScene = new ScrollMagic.Scene ({
+    triggerElement: '.trigger',
+})
+.setClassToggle('.greeting', 'fade-out')
+.addTo(controller);
+
 var aboutScene = new ScrollMagic.Scene ({
     triggerElement: '.trigger',
 })

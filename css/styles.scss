@@ -175,6 +175,8 @@ p {
     padding: 10px 0px 15px 50px;
     border-radius: 2px;
     position: fixed;
+    opacity: 1;
+    transition: all 0.5s ease-out;
     h2 {
         margin-top: -25px;
         font-size: 1.3em;
@@ -200,7 +202,7 @@ p {
     z-index: 999;
 }
 
-.about {
+.about, .content {
     font-family: $hfont;
     margin-top: 60px;
     h3 {
@@ -233,17 +235,23 @@ p {
 
 
 .aboutright {
-    font-family: $pfont;
-    text-align: left;
+    text-align: center;
     opacity: 0;
     transform: translateY(70px);
     transition: all 1s ease-out;
+    font-family: $hfont;
+    margin: auto;
+    padding: 10px 50px;
     h2 {
-        font-size: 1.6em;
+        font-family: 'trailr';
+        color: black!important;
     }
 
 }
 
+.changefont {
+
+}
 //Right Background Panel
 .wrap {
   height: 100vh;
@@ -484,6 +492,27 @@ p:hover {
     overflow-y: hidden;
 }
 
+.look::before {
+
+  content: "";
+  position: absolute;
+  width: 0%;
+  margin: auto;
+  height: 3px;
+  bottom: 0;
+  background-color: #000;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+
+}
+
+.look:hover::before {
+    width: 28%;
+}
+
 
 .worksheader {
     top: 10;
@@ -527,6 +556,10 @@ p:hover {
 .aboutleft.fade-in, .aboutright.fade-in, .svg.fade-in, .aboutleft2.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.greeting.fade-out {
+    opacity: 0;
 }
 
 .process {
