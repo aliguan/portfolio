@@ -28,6 +28,11 @@ $highlight: #ee875a;
   src: url('../fonts/PaulGrotesk-Bold-Trail.otf'); /* IE9 Compat Modes */
 }
 
+@font-face {
+  font-family: 'stereo';
+  src: url('../fonts/Stereo.otf'); /* IE9 Compat Modes */
+}
+
 body {
     background-color: white;
     margin: 0;
@@ -37,9 +42,9 @@ body {
 }
 
 h1 {
-    font-family: $pfont;
+    font-family: 'stereo';
     color: white;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 p {
@@ -166,12 +171,13 @@ p {
 }
 
 .greeting {
-    margin-top: calc(50vh - 410px/2);
+    margin-top: calc(60vh - 410px/2);
     padding: 10px 0px 15px 50px;
     border-radius: 2px;
+    position: fixed;
     h2 {
-        margin-top: 0;
-        font-size: 1.8em;
+        margin-top: -25px;
+        font-size: 1.3em;
     }
 }
 
@@ -185,11 +191,13 @@ p {
     display: none;
 }
 
+
 // About
 
 .content {
     width: 85%;
     margin: auto;
+    z-index: 999;
 }
 
 .about {
@@ -212,7 +220,7 @@ p {
 
 //Right Background Panel
 .wrap {
-  height: 94vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 
@@ -360,7 +368,7 @@ p {
 //PORTFOLIO FILTER CSS
 
 #portfolio {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     // -webkit-column-count: 3;
     // -moz-column-count: 3;
     // column-count: 3;
@@ -445,7 +453,7 @@ p:hover {
 }
 
 #filterworks {
-    margin: 50px 0!important;
+    margin: 50px 0 0 0!important;
     background: white;
     overflow-y: hidden;
 }
@@ -464,7 +472,7 @@ p:hover {
     transition: 0.5s ease-in-out;
     height: 160px;
     position: relative;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     h1 {
         font-family: 'traill';
         font-size: 5em;
