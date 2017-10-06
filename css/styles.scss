@@ -209,9 +209,35 @@ p {
     }
 }
 
+.aboutleft {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s ease-out;
+}
+
+.aboutleft2 {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s ease-out;
+    img {
+        width: 80%;
+        padding: 0 18px 0 18px;
+        top: 50%;
+        position: relative;
+        transform: translateY(-10px);
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
 .aboutright {
     font-family: $pfont;
     text-align: left;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s ease-out;
     h2 {
         font-size: 1.6em;
     }
@@ -488,6 +514,23 @@ p:hover {
     img {
         width: 120px;
     }
+}
+
+
+.svg {
+    padding: 0 64px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 1s ease-out;
+}
+
+.aboutleft.fade-in, .aboutright.fade-in, .svg.fade-in, .aboutleft2.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.process {
+    margin: 20px 45px;
 }
 
 .spotifriend {

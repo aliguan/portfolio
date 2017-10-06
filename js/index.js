@@ -132,37 +132,38 @@ openWork('.spotifriend', '.aboutspot');
 openWork('.gowander', '.aboutwander');
 openWork('.triwizard', '.abouttri');
 
-// $('.spotifriend').on('click', (e) => {
-//     if(open === false) {
-//         $('.aboutspot').fadeToggle(600);
-//         $('html,body').animate({
-//        scrollTop: $('.poop').offset().top},
-//        'slow');
-//
-//         $('.spotifriend').stop().animate({
-//             height: '500px',
-//             opacity: 1,
-//         }, 200, 'easeOutQuint');
-//
-//         $('.spotifriend h1').stop().animate({
-//            fontSize: '2em',
-//        }, 600, 'easeInQuint');
-//         open = true;
-//     } else {
-//         $('.desc').fadeToggle(600);
-//         $('.spotifriend').stop().animate({
-//             height: '200px',
-//             opacity: 0.6,
-//         }, 200, 'easeOutQuint');
-//         $('.spotifriend h1').stop().animate({
-//            fontSize: '5em',
-//        }, 600, 'easeInQuint');
-//         open = false;
-//     }
-//     });
-//
-// });
-    });
+//ScrollMagic
+
+var controller = new ScrollMagic.Controller();
+
+var iconScene = new ScrollMagic.Scene ({
+    triggerElement: '.process',
+})
+.setClassToggle('.svg', 'fade-in')
+.addTo(controller);
+
+var aboutScene = new ScrollMagic.Scene ({
+    triggerElement: '.trigger',
+})
+.setClassToggle('.aboutleft', 'fade-in')
+.addTo(controller);
+
+var about2Scene = new ScrollMagic.Scene ({
+    triggerElement: '.trigger',
+})
+.setClassToggle('.aboutleft2', 'fade-in')
+.addTo(controller);
+
+var aboutrightScene = new ScrollMagic.Scene ({
+    triggerElement: '.aboutright',
+})
+.setClassToggle('.aboutright', 'fade-in')
+.addTo(controller);
+
+
+
+
+});
 
 function openNav() {
     document.getElementById("sidenav").style.width = "325px";
