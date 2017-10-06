@@ -95,19 +95,19 @@ $(function() {
 $('#about').on('click', (e) => {
     $('html,body').animate({
     scrollTop: $('.scroller').offset().top},
-    'slow');
+    'easeOutQuint');
 });
 
 $('#navworks').on('click', (e) => {
     $('html,body').animate({
     scrollTop: $('.aboutright').offset().top},
-    'slow');
+    'easeOutQuint');
 });
 
 $('#worksbtn').on('click', (e) => {
     $('html,body').animate({
     scrollTop: $('.aboutright').offset().top},
-    'slow');
+    'easeOutQuint');
 });
 
 
@@ -189,7 +189,12 @@ var aboutrightScene = new ScrollMagic.Scene ({
 });
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "325px";
+
+    if(window.innerWidth < 450) {
+        document.getElementById("sidenav").style.width = "275px";
+    } else {
+        document.getElementById("sidenav").style.width = "325px";
+    }
 }
 
 /* Set the width of the side navigation to 0 */
