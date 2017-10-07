@@ -177,7 +177,7 @@ p {
     border-radius: 2px;
     position: fixed;
     opacity: 1;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     h2 {
         margin-top: -25px;
         font-size: 1.3em;
@@ -208,7 +208,7 @@ p {
     margin-top: 60px;
     h3 {
         font-size: 2em;
-        text-align: right;
+        text-align: center;
     }
 }
 
@@ -585,6 +585,9 @@ p:hover {
 
 .greeting.fade-out {
     opacity: 0;
+    h2 {
+        color: white;
+    }
 }
 
 .process {
