@@ -6,7 +6,7 @@ var images = ['images/bg.jpg',
         'images/gowander.png',
         'images/harry.png',
         'images/spotifriend.jpg',
-        'images/trigb.jpg',
+        'images/tripbg.jpg',
         'images/logo.png',
         'images/hello.gif',
         'images/worksbanner.jpg'];
@@ -14,7 +14,6 @@ var images = ['images/bg.jpg',
 for (i = 0; i < images.length; i++) {
     var img = new Image();
     img.src = images[i];
-    console.log(img);
 }
 
 
